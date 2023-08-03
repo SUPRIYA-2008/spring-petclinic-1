@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'JDK-17' }
+    agent { label 'jdk-17' }
     options {
         timeout(time: 30, unit: 'MINUTES')
     }
@@ -7,7 +7,7 @@ pipeline {
         pollSCM('* * * * *')
     }
     tools {
-        jdk 'JDK_17'
+        jdk 'jdk-17'
     }
     stages {
         stage('vcs') {
