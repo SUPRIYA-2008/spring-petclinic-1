@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'jdk-17' }
+    agent { label 'JDK-17' }
     options {
         timeout(time: 30, unit: 'MINUTES')
     }
@@ -8,6 +8,7 @@ pipeline {
     }
     tools {
         jdk 'jdk-17'
+        maven 'maven 3.9'
     }
     stages {
         stage('vcs') {
