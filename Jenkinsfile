@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'JDK-17' }
     tools {
-        maven 'maven 3.9'
+        maven 'mvn 3.9'
         jdk 'jdk-17'
     }
     stages {
