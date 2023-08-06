@@ -1,8 +1,8 @@
 pipeline {
     agent { label 'JDK-17' }
     tools {
-        jdk 'jdk-17'
         maven 'maven 3.9'
+        jdk 'jdk-17'
     }
     stages {
         stage('vcs') {
