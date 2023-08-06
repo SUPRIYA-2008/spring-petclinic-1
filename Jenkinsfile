@@ -19,7 +19,6 @@ pipeline {
         stage('reporting') {
             steps {
                 archiveArtifacts artifacts: '**/target/springpetclinic-*.jar'
-                junit testResults: '**/target/surefire-reports/TEST-*.xml'
             }
         }
     }
