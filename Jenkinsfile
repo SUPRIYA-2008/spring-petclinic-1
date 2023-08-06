@@ -1,8 +1,5 @@
 pipeline {
     agent { label 'JDK-17' }
-    options {
-        timeout(time: 30, unit: 'MINUTES')
-    }
     tools {
         jdk 'jdk-17'
         maven 'maven 3.9'
@@ -28,4 +25,3 @@ pipeline {
     }
 
 }
-
