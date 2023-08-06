@@ -16,6 +16,11 @@ pipeline {
                 sh script: 'mvn package'
             }
         }
+        stage('artifacts') {
+            steps {
+                archiveArtifacts artifacts: '**/target/spring-petclinic-*.jar'
+            }
+        }
     }
 
 }
